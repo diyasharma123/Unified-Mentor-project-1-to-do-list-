@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://t3.ftcdn.net/jpg/05/13/59/72/360_F_513597277_YYqrogAmgRR9ohwTUnOM784zS9eYUcSk.jpg');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 500px;
+    animation: popUp 0.6s ease forwards;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #f76b1c;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-section input:focus {
+    border-color: #fd746c;
+    box-shadow: 0 0 8px #fd746c;
+}
+
+.input-section button {
+    background: #f76b1c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.input-section button:hover {
+    background: #fd746c;
+    transform: scale(1.05);
+}
+
+
+.filter-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background: #eee;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.filter-btn:hover {
+    background: #f76b1c;
+    color: white;
+}
+
+
+#task-list {
+    list-style: none;
+}
+
+.task {
+    background: #f8f8f8;
+    padding: 12px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.task.completed .task-text {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-text {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.task-actions button {
+    margin-left: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.edit-btn {
+    color: #4caf50;
+}
+
+.delete-btn {
+    color: #f44336;
+}
+
+#toast {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+    z-index: 10;
+}
+
+
+
